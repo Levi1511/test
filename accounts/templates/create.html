@@ -3,7 +3,7 @@
   <body>
     <form method="POST" action="{% url 'create_account' %}">
       {% csrf_token %}
-      <label>ユーザーID</label>
+      <label>ユーザー</label>
       {{ form.username }}
       {{ form.username.errors }}
       <label>パスワード</label>
